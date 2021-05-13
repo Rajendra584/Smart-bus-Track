@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartBusTrackingSystem">
-        <activity android:name=".Mapspage"></activity>
+        <activity android:name=".flashscreen" />
+        <activity android:name=".profile" />
+        <activity android:name=".Mapspage" />
         <activity android:name=".Homepage" />
         <activity android:name=".MainActivity3" />
         <activity android:name=".MainActivity2" />
@@ -20,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

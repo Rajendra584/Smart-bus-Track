@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#C0C5E3"
+    android:background="@drawable/style"
     tools:context=".MainActivity3">
 
     <TextView
@@ -18,9 +18,9 @@
         android:layout_marginEnd="59dp"
         android:layout_marginRight="59dp"
         android:layout_marginBottom="45dp"
-        android:background="#9EABF1"
+        android:fontFamily="@font/aclonica"
         android:text="Forgot Password"
-        android:textSize="35sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
         android:layout_marginBottom="44dp"
         android:ems="10"
         android:inputType="number"
-        android:hint="Enterv the Register number"
+        android:hint="Enter the Register number"
         app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
