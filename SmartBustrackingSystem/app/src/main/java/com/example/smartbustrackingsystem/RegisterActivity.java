@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class MainActivity2 extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
     EditText studentname,studentparentname,mobilenumber,studentaddress;
 Button btt1;
 FirebaseDatabase rootnode;
@@ -30,9 +30,9 @@ DatabaseReference reference;
         btt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity2.this, "Registration Successfull", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterActivity.this, "Registration Successfull", Toast.LENGTH_SHORT).show();
                 Intent i1 = new Intent(getApplicationContext(),
-                        MainActivity.class);
+                        LoginActivity.class);
 
                 startActivity(i1);
                 rootnode=FirebaseDatabase.getInstance();
@@ -43,7 +43,8 @@ DatabaseReference reference;
                 String number=mobilenumber.getEditableText().toString();
                 String address=studentaddress.getEditableText().toString();
                 UserHelper userHelper=new UserHelper(name,parentname,number,address);
-                reference.setValue(userHelper);
+                reference.child(number).setValue(userHelper);
+
 
             }
         });

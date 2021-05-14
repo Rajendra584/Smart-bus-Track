@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/style"
-    tools:context=".MainActivity3">
+    tools:context=".ForgotpasswordActivity">
 
     <TextView
         android:id="@+id/textView4"

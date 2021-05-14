@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@drawable/style"
 
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/textView"

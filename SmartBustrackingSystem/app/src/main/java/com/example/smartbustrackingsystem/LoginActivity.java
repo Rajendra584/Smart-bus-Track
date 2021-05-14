@@ -8,7 +8,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     EditText id1, id2, id3, id4;
     Button bt1, bt2, bt3,verify;
 
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login);
         id1 = findViewById(R.id.name);
         id2 = findViewById(R.id.password);
         bt1 = findViewById(R.id.login);
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i1 = new Intent(MainActivity.this,
+                Intent i1 = new Intent(LoginActivity.this,
                         Homepage.class);
 
                 startActivity(i1);
@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i1 = new Intent(MainActivity.this,
-                        MainActivity3.class);
+                Intent i1 = new Intent(LoginActivity.this,
+                        ForgotpasswordActivity.class);
 
                 startActivity(i1);
             }
@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i1 = new Intent(MainActivity.this,
-                        MainActivity2.class);
+                Intent i1 = new Intent(LoginActivity.this,
+                        RegisterActivity.class);
 
                 startActivity(i1);
             }

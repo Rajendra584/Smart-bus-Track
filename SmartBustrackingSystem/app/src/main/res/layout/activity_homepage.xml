@@ -10,27 +10,11 @@
     android:background="@drawable/homestyle"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
-
     tools:context=".Homepage">
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/nav_view"
-        app:menu="@menu/mainmenu"
-        app:headerLayout="@layout/header"
-        android:layout_gravity="start">
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="maps"
 
-    </com.google.android.material.navigation.NavigationView>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-  <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-      android:background="#ffffff">
-
-
-
-  </LinearLayout>
-    </ScrollView>
+       android:id="@+id/maps"/>
 </LinearLayout>

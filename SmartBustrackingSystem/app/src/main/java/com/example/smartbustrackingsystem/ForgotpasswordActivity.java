@@ -1,13 +1,13 @@
 package com.example.smartbustrackingsystem;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity3 extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ForgotpasswordActivity extends AppCompatActivity {
     Button b1;
 
 
@@ -21,7 +21,7 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent i1 = new Intent(getApplicationContext(),
-                        MainActivity.class);
+                        LoginActivity.class);
 
                 startActivity(i1);
             }
