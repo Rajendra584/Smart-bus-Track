@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i1 = new Intent(LoginActivity.this,
+                Intent i1 = new Intent(getApplicationContext(),
                         Homepage.class);
 
                 startActivity(i1);

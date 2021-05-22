@@ -159,16 +159,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
-
-
             <Button
-                android:layout_width="100sp"
-                android:layout_height="50dp"
+                android:id="@+id/submit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="save"
-                android:id="@+id/save"/>
+                android:text="save" />
 
 
 

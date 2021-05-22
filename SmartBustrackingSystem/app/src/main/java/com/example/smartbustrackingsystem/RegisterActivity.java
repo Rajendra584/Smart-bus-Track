@@ -14,7 +14,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText studentname,studentparentname,mobilenumber,studentaddress;
-Button btt1;
+Button save;
 FirebaseDatabase rootnode;
 DatabaseReference reference;
 
@@ -22,12 +22,12 @@ DatabaseReference reference;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        btt1=findViewById(R.id.save);
+        save=findViewById(R.id.submit);
         studentname=findViewById(R.id.name);
         studentparentname=findViewById(R.id.parentname);
         mobilenumber=findViewById(R.id.parentnumber);
         studentaddress=findViewById(R.id.address);
-        btt1.setOnClickListener(new View.OnClickListener() {
+        save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(RegisterActivity.this, "Registration Successfull", Toast.LENGTH_SHORT).show();
